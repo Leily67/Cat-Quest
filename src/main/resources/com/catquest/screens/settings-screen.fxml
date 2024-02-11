@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@styles/styles.css"
+           xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml/1"
+           styleClass="layout"
+           fx:controller="com.catquest.controllers.SettingsController">
+    <HBox alignment="CENTER">
+        <VBox>
+            <Label styleClass="title" text="Settings" />
+            <VBox>
+                <Button styleClass="link" text="Audio" onAction="#handleAudioButtonAction" />
+                <Button styleClass="link" text="Controls" onAction="#handleControlButtonAction" />
+                <HBox styleClass="padding-top-left">
+                    <Button styleClass="action-button" text="Back" onAction="#handleBackButtonAction" />
+                </HBox>
+            </VBox>
+        </VBox>
+        <Region HBox.hgrow="ALWAYS" />
+        <HBox alignment="BOTTOM_RIGHT">
+            <ImageView pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/main-img.png" />
+            </ImageView>
+        </HBox>
+    </HBox>
+</StackPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<StackPane stylesheets="@styles/styles.css"
+           xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml/1"
+           styleClass="layout"
+           fx:controller="com.catquest.controllers.ConfirmNewGameController">
+    <HBox alignment="CENTER">
+        <VBox>
+            <Label styleClass="title" text="Wait..." />
+            <VBox spacing="120" styleClass="padding-left">
+                <VBox spacing="10">
+                    <Text styleClass="text-element" text="Are you sure you want to start" />
+                    <Text styleClass="text-element" text="a new game?" />
+                    <Text styleClass="text-element" text="All progress will be lost." />
+                </VBox>
+                <HBox spacing="50">
+                    <Button styleClass="action-button" text="Cancel" onAction="#onCancelButtonClick" />
+                    <Button styleClass="action-button" text="Continue" onAction="#onContinueButtonClick" />
+                </HBox>
+            </VBox>
+        </VBox>
+        <Region HBox.hgrow="ALWAYS" />
+        <HBox alignment="BOTTOM_RIGHT">
+            <ImageView pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/main-img.png" />
+            </ImageView>
+        </HBox>
+    </HBox>
+</StackPane>

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Sofadi One';
+    src: url('../../fonts/sofadi.ttf');
+}
+
+.root {
+    -fx-background-color: #262626;
+    -fx-font-family: "Sofadi One";
+}
+
+.title {
+    -fx-padding: 40px;
+    -fx-font-size: 140px;
+    -fx-text-fill: #f2f2f2;
+}
+
+.title-light {
+    -fx-padding: 40px 40px 0 40px;
+    -fx-font-size: 100px;
+    -fx-text-fill: #f2f2f2;
+}
+
+.link {
+    -fx-font-size: 70px;
+    -fx-text-fill: #f2f2f2;
+    -fx-cursor: hand;
+    -fx-background-color: #262626;
+}
+
+.link:hover {
+    -fx-text-fill: #a0a0a0;
+}
+
+.label-text {
+    -fx-font-size: 40px;
+    -fx-text-fill: #ffffff;
+}
+
+.action-button {
+    -fx-font-size: 50px;
+    -fx-text-fill: #f2f2f2;
+    -fx-background-color: #241044;
+    -fx-background-insets: 0;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-min-width: 300px;
+}
+
+.action-button:hover {
+    -fx-background-color: #2e1a5d;
+    -fx-cursor: hand;
+}
+
+.small-action-button {
+    -fx-font-size: 26px;
+    -fx-text-fill: #f2f2f2;
+    -fx-background-color: #241044;
+    -fx-background-insets: 0;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-max-width: 50px;
+}
+
+.small-action-button:hover {
+    -fx-background-color: #2e1a5d;
+    -fx-cursor: hand;
+}
+
+.layout {
+    -fx-padding: 0 100px 0 100px;
+    -fx-spacing: 100px;
+}
+
+.end-game-layout {
+    -fx-padding: 0 100px 0 450px;
+    -fx-spacing: 100px;
+    -fx-alignment: center;
+}
+
+.padding-left {
+    -fx-padding: 0 40px 0 40px;
+}
+
+.padding-top {
+    -fx-padding: 40px 0 0 0;
+}
+
+.padding-top-left {
+    -fx-padding: 40px 0 0 40px;
+}
+
+.padding-bottom {
+    -fx-padding: 0 0 40px 0;
+}
+
+.padding-bottom-left {
+    -fx-padding: 0 0 40px 40px;
+}
+
+.text-element {
+    -fx-font-size: 60px;
+    -fx-text-fill: #f2f2f2;
+    -fx-fill: #f2f2f2;
+}
+
+.flash {
+    -fx-font-size: 30px;
+    -fx-fill: #ff5252;
+    -fx-max-width: 100px;
+}
+
+.dialog {
+    -fx-text-fill: #f2f2f2;
+    -fx-background-color: #241044;
+    -fx-background-insets: 0;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}

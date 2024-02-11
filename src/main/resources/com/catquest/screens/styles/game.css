@@ -1,0 +1,12 @@
+.game {
+    -fx-background-color: #262626;
+}
+
+#stopwatch, #score, .score {
+    -fx-font-size: 2em;
+    -fx-fill: #ffffff;
+}
+
+* {
+    -fx-font-family: "Sofadi One";
+}

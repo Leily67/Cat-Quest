@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="layout"
+      stylesheets="@styles/styles.css,@styles/controls.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.catquest.controllers.ControlsController">
+    <Label styleClass="title-light" text="Controls" textAlignment="CENTER" />
+    <ScrollPane styleClass="scroll-pane,padding-left"  fitToWidth="true">
+        <VBox fx:id="controls" alignment="CENTER" styleClass="vbox" style="-fx-spacing: 20px;" />
+    </ScrollPane>
+    <VBox styleClass="padding-bottom-left">
+        <Button onAction="#onBackButtonClick" styleClass="action-button" text="Back" />
+    </VBox>
+</VBox>

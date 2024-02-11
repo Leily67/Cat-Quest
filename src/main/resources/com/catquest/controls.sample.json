@@ -1,0 +1,12 @@
+{
+  "Move Left": "Q",
+  "Move Down": "S",
+  "Down Attack": "DOWN",
+  "Dodge": "SHIFT",
+  "Open Menu": "ESCAPE",
+  "Left Attack": "LEFT",
+  "Up Attack": "UP",
+  "Move Up": "Z",
+  "Right Attack": "RIGHT",
+  "Move Right": "D"
+}

@@ -1,0 +1,19 @@
+.item {
+    -fx-min-height: 60px;
+}
+
+.item:hover {
+    -fx-background-color: rgba(46, 26, 93, 0.31); /* Set the background color */
+    -fx-cursor: hand; /* Set the cursor */
+}
+
+.item .item-key {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.scroll-pane,
+.scroll-pane .vbox {
+    -fx-background-color: #262626;
+}

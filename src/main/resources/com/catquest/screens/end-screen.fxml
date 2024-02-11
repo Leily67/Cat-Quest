@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="game" stylesheets="@styles/styles.css,@styles/game.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.catquest.controllers.EndController">
+    <HBox alignment="CENTER" layoutX="842.0" layoutY="55.0">
+        <Text fx:id="stopwatch" layoutX="881.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" textAlignment="CENTER" wrappingWidth="100.0" />
+        <HBox alignment="CENTER">
+            <Text fill="WHITE" styleClass="score" text="Score: " textAlignment="CENTER" />
+            <Text fx:id="score" fill="WHITE" text="0" textAlignment="CENTER" />
+        </HBox>
+    </HBox>
+    <VBox alignment="CENTER" />
+     <ImageView fx:id="room" fitHeight="800" fitWidth="800" layoutX="535.0" layoutY="140.0">
+         <Image url="@../images/worlds/end.png" />
+     </ImageView>
+    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1084.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+        <Image url="@../images/npc.png" />
+    </ImageView>
+    <ImageView fx:id="cat" fitHeight="60.0" fitWidth="60.0" layoutX="916.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/cats/brown/face1.png" />
+    </ImageView>
+    <VBox layoutX="53.0" layoutY="140.0" prefHeight="486.0" prefWidth="434.0" spacing="30">
+        <HBox>
+            <Text fx:id="playerName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="435.0">
+                <font>
+                    <Font size="48.0" />
+                </font>
+            </Text>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="352.0" spacing="10">
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/bottle-of-xp.png" />
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Level 0 - 0 / 0 xp" wrappingWidth="395.94000244140625" fx:id="xp">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Text>
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="352.0">
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/items/health.png" />
+            </ImageView>
+            <Region prefHeight="45.0" prefWidth="20.0" />
+            <ProgressBar fx:id="healthBar" prefHeight="42.0" prefWidth="268.0" progress="0.0" style="-fx-accent: #CF301F; -fx-padding: 0; -fx-control-inner-background: #262626;" />
+            <Region prefHeight="45.0" prefWidth="20.0" />
+            <HBox alignment="CENTER">
+                <Text fx:id="currentHp" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <Text fx:id="maxHp" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+            </HBox>
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="352.0" spacing="10">
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/items/sword.png" />
+            </ImageView>
+            <Text fx:id="currentDamage" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Text>
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="352.0" spacing="10">
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/items/boots.png" />
+            </ImageView>
+            <Text fx:id="currentSpeed" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Text>
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="352.0" spacing="10">
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/items/armor.png" />
+            </ImageView>
+            <Text fx:id="currentDefense" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="dialog" layoutX="494.0" layoutY="582.0" opacity="0" prefHeight="395.0" prefWidth="885.0" spacing="20" style="-fx-background-color: #241044; -fx-padding: 40;" styleClass="dialog">
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cat Inshape" wrappingWidth="577.0">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fx:id="dialogText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="805.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+    </VBox>
+</AnchorPane>

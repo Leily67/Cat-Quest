@@ -1,0 +1,26 @@
+{
+  "currentLevel": 0,
+  "score": 0,
+  "currentWorld": 0,
+  "seed": "",
+  "cat": {
+    "maxHp": 100,
+    "level": "1",
+    "stats": {
+      "def": 9,
+      "atk": 17,
+      "speed": 1.5
+    },
+    "name": "Cat name",
+    "xp": 0,
+    "hp": 37,
+    "items": {
+      "Sword": 0,
+      "Armor": 0,
+      "Boots": 0
+    }
+  },
+  "created_at": 1700683563584,
+  "isFinished": false,
+  "stopwatch": 1506
+}

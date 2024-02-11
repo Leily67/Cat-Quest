@@ -1,0 +1,13 @@
+.name-field {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 50px; /* Set the desired width for the input field */
+    -fx-min-height: 75px;
+    -fx-max-width: 620px;
+    -fx-background-insets: 0; /* Remove background insets */
+    -fx-background-radius: 50px; /* Set the background radius */
+    -fx-border-width: 2px; /* Define the border width */
+    -fx-border-color: black; /* Set the border color */
+    -fx-border-radius: 50px; /* Set the border radius */
+    -fx-font-size: 30px;
+    -fx-prompt-text-fill: #ff5252;
+}

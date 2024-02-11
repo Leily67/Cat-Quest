@@ -1,0 +1,14 @@
+module:com.catquest.catquest
+com.catquest.catquest
+com.catquest.catquest.controllers
+com.catquest.catquest.entities
+com.catquest.catquest.entities.boss
+com.catquest.catquest.entities.enemies
+com.catquest.catquest.entities.items
+com.catquest.catquest.enums
+com.catquest.catquest.exceptions
+com.catquest.catquest.game
+com.catquest.catquest.game.rooms
+com.catquest.catquest.game.tasks
+com.catquest.catquest.helpers
+com.catquest.catquest.screens

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox
+      stylesheets="@styles/styles.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      styleClass="layout"
+      fx:controller="com.catquest.controllers.AudioController">
+    <Label styleClass="title" text="Audio" textAlignment="CENTER" />
+    <VBox styleClass="padding-left" spacing="50">
+        <VBox spacing="30">
+            <Label styleClass="label-text" text="Volume of the music" />
+            <HBox spacing="20">
+                <Button styleClass="small-action-button" onAction="#decreaseMusicVolume" text="-"/>
+                <Label styleClass="label-text,volume-label" fx:id="musicVolumeLabel" text="50"/>
+                <Button styleClass="small-action-button" onAction="#increaseMusicVolume" text="+"/>
+            </HBox>
+        </VBox>
+        <VBox spacing="30">
+            <Label styleClass="label-text" text="Volume of the effects" />
+            <HBox spacing="20">
+                <Button styleClass="small-action-button" onAction="#decreaseEffectsVolume" text="-"/>
+                <Label styleClass="label-text,volume-label" fx:id="effectsVolumeLabel" text="50"/>
+                <Button styleClass="small-action-button" onAction="#increaseEffectsVolume" text="+"/>
+            </HBox>
+        </VBox>
+        <Button onAction="#handleBackButtonAction" styleClass="action-button" text="Back" />
+    </VBox>
+</VBox>
